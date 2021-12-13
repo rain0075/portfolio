@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------------------------------
+                C U S T O M  S T Y L E S
+----------------------------------------------------------*/
+html{
+	font-family: 'Roboto', sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5{
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Styling BannerImg */
+.bannerimg{
+    width: 100%;
+}
+/* Styling the Navigation */
+.navigation{
+	background-color: #0C2680;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: stretch;
+}
+
+.logo{
+	width: 20rem;
+    justify-self: left;
+}
+
+nav ul{
+	display: flex;
+    justify-content: right;
+}
+
+nav ul a{
+	padding: .5rem;
+	border-left: whitesmoke 0 0 1 0 ;
+	color: whitesmoke;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav ul a:hover{
+	color: #CFBC2A;
+}
+
+/* Styling the Homepage Cards */
+.home-cards{
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	column-gap: 2rem;
+	text-align: center;
+	justify-content: center;
+	margin: 3.5rem auto 2rem auto;
+}
+
+.home-cards h2{
+	color: #F7FBFC;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 3px #000;
+}
+
+.home-cards a{
+	text-decoration: none;
+}
+
+.card-webcomic{
+	background-image: url(../images/webcomic-bgimg.png);
+	background-color: #6289CC;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 150px 40px;
+	transition: 0.5s;
+}
+
+.card-portfolio{
+	background-image: url(../images/portfolio-bgimg.png);
+	background-color: #6289CC;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 150px 40px;
+	transition: 0.5s;
+}
+
+.card-commissions{
+	background-image: url(../images/commissions-bgimg.png);
+	background-color: #6289CC;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 150px 40px;
+	transition: 0.5s;
+}
+
+.card-webcomic:hover{
+	transform: scale(1.01);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.card-portfolio:hover{
+	transform: scale(1.01);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.card-commissions:hover{
+	transform: scale(1.01);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Styling the About Me Section */
+.home-about-card{
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+	margin: 0 auto;
+	background-color: whitesmoke;
+}
+
+.home-about{
+	background-color: #0C2680;
+	padding: 2rem;
+	margin: 4rem auto;
+}
+
+.card-title{
+	color: #CFBC2A;
+	
+}
+
+.home-about-card .btn{
+	font-family: 'Poppins', sans-serif;
+	background-color: #CFBC2A;
+	border: none;
+}
+
+.home-about-card .btn:hover{
+	background-color: whitesmoke;
+    color: #0C2680;
+}
+
+/* Styling the Footer */
+.footer-parent{
+	background-color: #0C2680;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	padding: 1rem 2rem 0 2rem;
+	align-items: center;
+}
+
+/* Footer - Socials */
+.footer-socials{
+	margin-top: .1rem;
+}
+.footer-socials ul{
+	display: flex;
+	padding-left: 0;
+	margin-bottom: .1rem;
+}
+
+
+.footer-socials ul li a{
+	padding: 0 .2rem 0 .2rem;
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: #CFBC2A;
+	transition: color .3s;
+}
+
+.footer-socials ul li a:hover{
+	color: #B9CDF2;
+}
+
+.footer-socials p{
+	font-family: 'Poppins', sans-serif;
+	color: #CFBC2A;
+	font-size: .8rem;
+	padding: 0;
+}
+
+/* Footer - Copyright */
+.footer-child{
+	align-self: flex-end;
+	font-family: 'Poppins', sans-serif;
+	font-size: .7rem;
+	color: #B9CDF2;
+}
