@@ -238,13 +238,34 @@ nav ul a:hover {
 .gallerypage{
 	width: auto;
 	background-color: navy;
-}
+	padding-top: 2rem;
+}	
 
+.gallerypage h2{
+	margin: 2rem ;
+
+}
 .gallery-shelf{
+		display: flex;
+		flex-direction: row;
 		max-width: 75%;
 		margin: 0 auto;
+		justify-content: space-between;
+		align-items: ;
 	}
 
+.gallery-shelf .card {
+	width: 400px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+	margin: 1rem;
+	background-color: #0C2680;
+	
+}
+
+.card p{
+	color:whitesmoke;
+	padding: 1rem;
+}
 /* Styling About Page */
 
 .aboutpage{
